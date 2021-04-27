@@ -1,6 +1,5 @@
 <html>
   <head>
-    <!-- <! — [if mso]> -->
     <style type="text/css">
       @media screen {
         @font-face {
@@ -20,9 +19,17 @@
         color: #000000;
       }
 
+      table,
+      td {
+        border-collapse: collapse;
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+      }
+
       .paragraph-block__content {
-        padding: 15px;
-        font-weight: 500;
+        padding: 20px 0 10px 0;
+        font-size: 16px;
+        line-height: 1.6;
       }
 
       .puzzle-row {
@@ -37,12 +44,12 @@
         background-color: #ffffff;
       }
     </style>
-    <!-- <![endif] → -->
+
     <title>Invite Participant Email Template</title>
   </head>
   <body>
     <table
-      class="full-width-container"
+      align="center"
       border="0"
       role="presentation"
       cellpadding="0"
@@ -57,7 +64,13 @@
       <tr>
         <td align="center">
           <!-- header -->
-          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+          <table
+            border="0"
+            cellpadding="0"
+            cellspacing="0"
+            width="100%"
+            style="height: 70px"
+          >
             <tr>
               <td
                 align="center"
@@ -65,11 +78,13 @@
                   padding: 35px 0 35px 0;
                   border-bottom: solid 3px #747476;
                   width: 100%;
+                  height: 70px;
                 "
               >
+                <!-- logo PNG format -->
                 <img
-                  src="/assets/SPCE-Logotype_Black.svg"
-                  alt="logo"
+                  src="/assets/SPCE-Logotype_Black (kopia).png"
+                  alt="logo png"
                   height="70"
                 />
               </td>
@@ -85,41 +100,37 @@
             style="
               width: 77%;
               margin: 0 auto;
-              padding: 25px 0;
-              line-height: 1.6;
+
               text-align: left;
-              margin-top: 30px;
+              font-size: 16px;
+              margin-top: 40px;
             "
           >
             <tr>
               <td class="paragraph-block__content">
-                Welcome to our SP_CE, a place optimized for B2B companies, for
-                buyers, sellers, experts and others who meet up over time - with
-                the objective to do business in the best ever way.
-              </td>
-            </tr>
-            <tr>
-              <td class="paragraph-block__content">
-                This is a safe place with full transparency for the invited,
-                where we go beyond the simple meetings in Zoom or Teams. In
-                addition to a great video quality when we meet up in the room,
-                we always can go back and review to old meetings, read and watch
-                all material we share with each other and where you can ask
-                questions in the chat. We even have a ToDo-list, if we choose to
-                use it, so that we know what we are to do between meetings.
-              </td>
-            </tr>
-            <tr>
-              <td class="paragraph-block__content">
-                If you have Chrome as standard browser, you can enter just by
-                clicking the button below. If not, it´s almost as easy. Just
-                copy & paste the URL link below into Chrome or a later version
-                of Microsoft Edge. Again, a great and warm welcome to our SP_CE!
-              </td>
-            </tr>
-            <tr>
-              <td class="paragraph-block__content" style="padding-top: 30px">
-                Eric Andersson
+                <p>
+                  Welcome to our SP_CE, a place optimized for B2B companies, for
+                  buyers, sellers, experts and others who meet up over time -
+                  with the objective to do business in the best ever way.
+                </p>
+                <p>
+                  This is a safe place with full transparency for the invited,
+                  where we go beyond the simple meetings in Zoom or Teams. In
+                  addition to a great video quality when we meet up in the room,
+                  we always can go back and review to old meetings, read and
+                  watch all material we share with each other and where you can
+                  ask questions in the chat. We even have a ToDo-list, if we
+                  choose to use it, so that we know what we are to do between
+                  meetings.
+                </p>
+                <p>
+                  If you have Chrome as standard browser, you can enter just by
+                  clicking the button below. If not, it´s almost as easy. Just
+                  copy & paste the URL link below into Chrome or a later version
+                  of Microsoft Edge. Again, a great and warm welcome to our
+                  SP_CE!
+                </p>
+                <p style="padding: 10px 0 45px 0">Eric Andersson</p>
               </td>
             </tr>
           </table>
@@ -133,16 +144,14 @@
             cellpadding="0"
             cellspacing="0"
             width="100%"
-            style="padding-top: 30px"
           >
             <tr>
-              <td align="center" style="padding-bottom: 15px">
+              <td align="center" style="padding: 15px 0 15px 0">
                 <table
                   align="center"
                   border="0"
                   cellpadding="0"
                   cellspacing="0"
-                  width="100%"
                 >
                   <tr>
                     <td
@@ -151,6 +160,8 @@
                       style="
                         width: 200px;
                         background-color: #00cd7f;
+                        -webkit-border-radius: 100px;
+                        -moz-border-radius: 100px;
                         border-radius: 100px;
                         display: block;
                         padding: 15px 45px 15px 45px;
@@ -170,8 +181,9 @@
                       >
                     </td>
                   </tr>
+
                   <tr>
-                    <td align="center" style="padding-top: 30px">
+                    <td align="center" style="padding: 30px 0 20px 0">
                       <table
                         border="0"
                         cellpadding="0"
@@ -203,6 +215,7 @@
               </td>
             </tr>
           </table>
+
           <!-- CTA Block -->
 
           <!-- Puzzle Block-->
@@ -212,6 +225,7 @@
             cellpadding="0"
             cellspacing="0"
             width="100%"
+            style="padding: 20px 0 20px 0"
           >
             <tr>
               <td>
@@ -264,7 +278,10 @@
                     <td class="puzzle-column"></td>
                     <td class="puzzle-column"></td>
                     <td class="puzzle-column"></td>
-                    <td class="puzzle-column bg-white"></td>
+                    <td
+                      class="puzzle-column bg-white"
+                      style="background-color: #ffffff"
+                    ></td>
                   </tr>
                   <tr class="puzzle-row">
                     <td class="puzzle-column"></td>
@@ -313,7 +330,7 @@
             cellspacing="0"
             align="center"
             width="100%"
-            style="width: 100%; padding: 30px 0 20px 0"
+            style="width: 100%"
           >
             <tr>
               <td
@@ -321,7 +338,7 @@
                   font-family: MediumLLBold, Helvetica;
                   font-weight: 600px;
                   font-size: 10px;
-                  padding-top: 20px;
+                  padding: 35px 0 10px 0;
                   text-align: center;
                 "
               >
@@ -349,6 +366,7 @@
               width: 100%;
               height: 50px;
               color: #ffffff;
+              padding: 15px 0 15px 0;
             "
           >
             <tr>
@@ -357,7 +375,6 @@
                   font-family: MediumLLRegular, Helvetica;
                   font-size: 10px;
                   text-align: center;
-                  padding: 15px 0 15px 0;
                 "
               >
                 You get this email because ${host} invited you to join a
